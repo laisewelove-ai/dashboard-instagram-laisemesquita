@@ -153,4 +153,30 @@ else
   say "ABRIR_NO_CHROME=false — pulando abertura do navegador."
 fi
 
+# ---- 6. auto-deploy para Vercel via GitHub ----
+DEPLOY_DIR="$HOME/dashboard-instagram-laisemesquita"
+if [ -d "$DEPLOY_DIR/.git" ]; then
+  say "Sincronizando arquivos atualizados para $DEPLOY_DIR…"
+  cp -f "$PROJ/dados.json" "$DEPLOY_DIR/dados.json"
+  cp -f "$PROJ/index.html" "$DEPLOY_DIR/index.html"
+  cd "$DEPLOY_DIR"
+  git add dados.json index.html
+  if ! git diff --staged --quiet; then
+    git commit -m "update: $HOJE"
+    if git push origin main; then
+      say "Push para GitHub concluído."
+    else
+      say "AVISO: git push falhou — tentando vercel deploy direto."
+    fi
+  else
+    say "Nenhuma alteração nos dados — push pulado."
+  fi
+  PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH" vercel deploy --prod --cwd "$DEPLOY_DIR" \
+    && say "Vercel reimplantado com sucesso." \
+    || say "AVISO: vercel deploy falhou — verifique manualmente."
+  cd "$PROJ"
+else
+  say "AVISO: $DEPLOY_DIR/.git não encontrado — auto-deploy pulado."
+fi
+
 say "===== AUDITORIA SEMANAL WLC — fim ====="
