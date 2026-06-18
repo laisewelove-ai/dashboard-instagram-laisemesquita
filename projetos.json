@@ -1,0 +1,52 @@
+{
+  "fonte": "Notion (SSOT) + cadências definidas pela Laíse",
+  "sincronizadoEm": "2026-06-16",
+  "nota": "As views de projeto mostram ATIVIDADES e HÁBITOS recorrentes que alimentam a meta — não os conteúdos em si. Cadência semanal por responsável (Laíse / Equipe).",
+  "projetos": [
+    {
+      "id": "flow-longo",
+      "nome": "Flow Longo",
+      "desc": "Produção de conteúdo long-form (YouTube)",
+      "notionUrl": "https://app.notion.com/p/fb8e6b0f220e49c3a4634c17398e57be",
+      "kpis": [
+        {"label": "Temas no pipeline", "valor": 30},
+        {"label": "Em produção", "valor": 5},
+        {"label": "Ideias", "valor": 25}
+      ],
+      "atividades": [
+        {"resp": "Laíse", "atividade": "Gravar vídeos YouTube", "meta": 3, "unidade": "por semana", "definida": true},
+        {"resp": "Equipe", "atividade": "Aprovar scripts YT", "meta": 3, "unidade": "por semana", "definida": true},
+        {"resp": "Equipe", "atividade": "Editar e publicar vídeos YT", "meta": null, "unidade": "por semana", "definida": false}
+      ]
+    },
+    {
+      "id": "flow-curto",
+      "nome": "Flow Curto",
+      "desc": "Produção de Reels e carrosséis",
+      "notionUrl": "https://app.notion.com/p/3804cfe1220181a6b2faddf7d94aa080",
+      "kpis": [
+        {"label": "Temas no pipeline", "valor": 0},
+        {"label": "Em produção", "valor": 0},
+        {"label": "Ideias", "valor": 0}
+      ],
+      "notaPipeline": "Banco WLC do Flow Curto ainda vazio — será preenchido no Notion.",
+      "atividades": [
+        {"resp": "Laíse", "atividade": "Gravar Reels", "meta": 9, "unidade": "por semana", "definida": true},
+        {"resp": "Laíse", "atividade": "Gravar sequência de stories", "meta": null, "unidade": "diária", "definida": true},
+        {"resp": "Equipe", "atividade": "Editar e agendar Reels/carrosséis", "meta": null, "unidade": "por semana", "definida": false}
+      ]
+    },
+    {
+      "id": "guias-cadernos",
+      "nome": "Guias x Cadernos Secretos",
+      "desc": "Material de conversão da comunidade (guias e cadernos secretos)",
+      "notionUrl": "https://app.notion.com/p/3804cfe122018195956fc5443bd570f8",
+      "kpis": [],
+      "notaPipeline": "Em estruturação no Notion (Caderno Secreto WLC, Guia Aeroporto, Cadernos da Patagônia).",
+      "atividades": [
+        {"resp": "Laíse + Equipe", "atividade": "Estruturar cadernos secretos por destino", "meta": null, "unidade": "a definir", "definida": false},
+        {"resp": "Equipe", "atividade": "Aprovar cadernos secretos", "meta": null, "unidade": "a definir", "definida": false}
+      ]
+    }
+  ]
+}

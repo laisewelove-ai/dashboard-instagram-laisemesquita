@@ -1,0 +1,157 @@
+/* ============================================================
+   WE LOVE CHILE — Foundations: Color + Type tokens
+   Source of truth: DI-003-wlc (Iris, 2026-05-28)
+   ============================================================ */
+
+/* ---------- FONTS ---------- */
+/* Lufga — primary universal family, 9 weights + italics */
+@font-face { font-family: "Lufga"; font-weight: 100; font-style: normal; font-display: swap; src: url("fonts/lufga-thin.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 100; font-style: italic;  font-display: swap; src: url("fonts/lufga-thin-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 200; font-style: normal; font-display: swap; src: url("fonts/lufga-extra-light.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 200; font-style: italic;  font-display: swap; src: url("fonts/lufga-extra-light-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 300; font-style: normal; font-display: swap; src: url("fonts/lufga-light.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 300; font-style: italic;  font-display: swap; src: url("fonts/lufga-light-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/lufga-regular.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 400; font-style: italic;  font-display: swap; src: url("fonts/lufga-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 500; font-style: normal; font-display: swap; src: url("fonts/lufga-medium.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 500; font-style: italic;  font-display: swap; src: url("fonts/lufga-medium-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 600; font-style: normal; font-display: swap; src: url("fonts/lufga-semibold.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 600; font-style: italic;  font-display: swap; src: url("fonts/lufga-semibold-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 700; font-style: normal; font-display: swap; src: url("fonts/lufga-bold.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 700; font-style: italic;  font-display: swap; src: url("fonts/lufga-bold-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 800; font-style: normal; font-display: swap; src: url("fonts/lufga-extra-bold.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 800; font-style: italic;  font-display: swap; src: url("fonts/lufga-extra-bold-italic.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 900; font-style: normal; font-display: swap; src: url("fonts/lufga-black.otf") format("opentype"); }
+@font-face { font-family: "Lufga"; font-weight: 900; font-style: italic;  font-display: swap; src: url("fonts/lufga-black-italic.otf") format("opentype"); }
+
+/* Display / expressive families — use SPARINGLY (max 3-5 words) */
+@font-face { font-family: "Summer Bold";  font-weight: 700; font-display: swap; src: url("fonts/Summer-Bold.otf") format("opentype"); }
+@font-face { font-family: "Caferus Slim"; font-weight: 400; font-display: swap; src: url("fonts/Caferus-Slim.otf") format("opentype"); }
+@font-face { font-family: "Blauer Brush"; font-weight: 400; font-display: swap; src: url("fonts/Blauer-Brush.otf") format("opentype"); }
+@font-face { font-family: "Chalkiez";     font-weight: 400; font-display: swap; src: url("fonts/Chalkiez-Regular.otf") format("opentype"); }
+@font-face { font-family: "Zupa Lumpa";   font-weight: 400; font-display: swap; src: url("fonts/Zupa-Lumpa.ttf") format("truetype"); }
+@font-face { font-family: "Chaloopswoo";  font-weight: 700; font-display: swap; src: url("fonts/Chaloopswoo-BD.ttf") format("truetype"); }
+
+:root {
+  /* ============ CORE PALETTE (DI-003 §2) ============ */
+  --wlc-imperial-red:   #E74041; /* PRIMARY — CTAs, emotional accent, wordmark. Never body text. */
+  --wlc-space-cadet:    #242258; /* ANCHOR — text, icons, serious grounds. The brand "navy". */
+  --wlc-alabaster:      #F5EFE8; /* MAIN BG — the canvas, ~60% of any composition. */
+  --wlc-green-blue:     #2164AE; /* secondary highlight — trust, alt buttons */
+  --wlc-chinese-yellow: #FCB415; /* warm accent — energy, tags, badges, big numerals */
+  --wlc-powder-blue:    #9FD9D8; /* soft / freshness — soft bgs, chips, lightness */
+  --wlc-terra-cotta:    #EB6952; /* warmth — the perfect pair to Imperial Red */
+  --wlc-midnight:       #7C287B; /* premium purple — sophistication, use sparingly */
+  --wlc-skobeloff:      #027071; /* nature / adventure — petrol green, landscapes */
+
+  /* ============ SUPPORT NEUTRALS ============ */
+  --wlc-cream:          #FBF8F3; /* lifted card surface, warmer-than-white */
+  --wlc-white:          #FFFFFF;
+  --wlc-border-warm:    #E6DDD3; /* warm hairline border — NEVER cool gray */
+  --wlc-ink-60:         rgba(36,34,88,0.62); /* secondary text on light */
+  --wlc-ink-40:         rgba(36,34,88,0.40); /* tertiary / captions */
+
+  /* ============ SEMANTIC ROLES ============ */
+  --bg:            var(--wlc-alabaster);
+  --surface:       var(--wlc-cream);
+  --surface-2:     var(--wlc-white);
+  --fg1:           var(--wlc-space-cadet);   /* primary text */
+  --fg2:           var(--wlc-ink-60);        /* secondary text */
+  --fg3:           var(--wlc-ink-40);        /* tertiary text */
+  --accent:        var(--wlc-imperial-red);  /* primary action / emphasis */
+  --accent-warm:   var(--wlc-terra-cotta);
+  --link:          var(--wlc-green-blue);
+  --highlight:     var(--wlc-chinese-yellow);
+  --border:        var(--wlc-border-warm);
+  --on-accent:     var(--wlc-white);
+
+  /* ============ TINTED SHADOWS (DI-003 §5 — tinted w/ Space Cadet) ============ */
+  --shadow-sm: 0 1px 3px rgba(36,34,88,0.10);
+  --shadow-md: 0 6px 20px rgba(36,34,88,0.12);
+  --shadow-lg: 0 18px 48px rgba(36,34,88,0.18);
+  --shadow-pop: 0 14px 32px rgba(231,64,65,0.28); /* red-tinted for primary CTAs */
+
+  /* ============ RADII (DI-003 §5) ============ */
+  --radius-card:   20px;
+  --radius-modal:  28px;
+  --radius-chip:   999px;  /* pill */
+  --radius-pill:   999px;
+  --radius-sm:     10px;
+
+  /* ============ SPACING (DI-003 §4 — base 8px) ============ */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* ============ TYPE FAMILIES ============ */
+  --font-sans:      "Lufga", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display:   "Summer Bold", "Lufga", sans-serif;   /* impact phrases, max 3-5 words */
+  --font-slim:      "Caferus Slim", "Lufga", sans-serif;  /* elegant subtitles, quotes */
+  --font-brush:     "Blauer Brush", cursive;              /* emotional script accents */
+  --font-chalk:     "Chalkiez", sans-serif;               /* impact headlines, stamps */
+  --font-stamp:     "Zupa Lumpa", sans-serif;             /* stamps, badges, destino seals */
+  --font-numeral:   "Chaloopswoo", "Lufga", sans-serif;   /* big display numerals, logo display */
+
+  /* ============ TYPE SCALE (sentence case everywhere) ============ */
+  --fs-display:  clamp(48px, 7vw, 104px);  /* @kind font */
+  --fs-h1:       clamp(38px, 5vw, 64px);   /* @kind font */
+  --fs-h2:       clamp(28px, 3.4vw, 44px); /* @kind font */
+  --fs-h3:       22px;
+  --fs-lead:     20px;
+  --fs-body:     16px;
+  --fs-sm:       14px;
+  --fs-eyebrow:  11px;  /* ALL CAPS + tracked, weight 700 — the ONLY uppercase role */
+
+  --lh-tight: 1.04;  /* @kind font */
+  --lh-snug:  1.18;  /* @kind font */
+  --lh-body:  1.55;  /* @kind font */
+}
+
+/* ============ SEMANTIC TYPE CLASSES ============ */
+.wlc-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.wlc-display { font-family: var(--font-display); font-size: var(--fs-display); line-height: var(--lh-tight); color: var(--fg1); }
+h1, .wlc-h1 { font-family: var(--font-sans); font-weight: 800; font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: -0.01em; color: var(--fg1); }
+h2, .wlc-h2 { font-family: var(--font-sans); font-weight: 700; font-size: var(--fs-h2); line-height: var(--lh-snug); letter-spacing: -0.01em; color: var(--fg1); }
+h3, .wlc-h3 { font-family: var(--font-sans); font-weight: 600; font-size: var(--fs-h3); line-height: var(--lh-snug); color: var(--fg1); }
+.wlc-lead  { font-family: var(--font-slim); font-size: var(--fs-lead); line-height: var(--lh-body); color: var(--fg2); }
+p, .wlc-body { font-family: var(--font-sans); font-weight: 400; font-size: var(--fs-body); line-height: var(--lh-body); color: var(--fg1); }
+.wlc-script { font-family: var(--font-brush); color: var(--accent); }
+
+/* ============ DECORATIVE ELEMENT PALETTE ============ */
+/* Brand element SVGs ship as multi-layer art whose per-layer color classes
+   were stripped on export. We re-map each layer class to a brand color, scoped
+   to a .wlc-art wrapper so it never bleeds onto single-color icons.
+   NOTE: this is a reconstructed mapping (vibrant, on-brand) — not the artist's
+   original assignment. See README → Iconography for the caveat. */
+.wlc-art { display: inline-block; line-height: 0; }
+.wlc-art svg { width: 100%; height: 100%; display: block; }
+.wlc-art .cls-1  { fill: var(--wlc-space-cadet); }
+.wlc-art .cls-2  { fill: var(--wlc-imperial-red); }
+.wlc-art .cls-3  { fill: var(--wlc-chinese-yellow); }
+.wlc-art .cls-4  { fill: var(--wlc-powder-blue); }
+.wlc-art .cls-5  { fill: var(--wlc-terra-cotta); }
+.wlc-art .cls-6  { fill: var(--wlc-green-blue); }
+.wlc-art .cls-7  { fill: var(--wlc-skobeloff); }
+.wlc-art .cls-8  { fill: var(--wlc-midnight); }
+.wlc-art .cls-9  { fill: var(--wlc-alabaster); }
+.wlc-art .cls-10 { fill: var(--wlc-cream); }
+/* Warm variant — swaps the navy base for cream (light grounds) */
+.wlc-art.on-dark .cls-1 { fill: var(--wlc-alabaster); }
+.wlc-art.on-dark .cls-9 { fill: var(--wlc-space-cadet); }
+
+/* ============ ICON RECOLOR HELPER ============ */
+/* Preferred: inline the SVG (via wlc-icons.js → WLC.icon('name')) and set `color`.
+   Icons are fill=currentColor, so any element color recolors them — and this
+   survives html-to-image capture & PPTX export (CSS mask does not). */
+.wlc-ic { display: inline-flex; width: 1em; height: 1em; }
+.wlc-ic svg { width: 100%; height: 100%; display: block; }

@@ -1,0 +1,10 @@
+*.sh
+*.mjs
+*.bak
+*.json
+render.js
+transcricao-tiktok-lauraaad0.md
+auditorias/
+qa/
+dashboard-instagram-laisemesquita.png
+.DS_Store

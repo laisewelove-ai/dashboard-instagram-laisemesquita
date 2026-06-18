@@ -1,0 +1,34 @@
+{
+  "fonte": "Notion (SSOT)",
+  "sincronizadoEm": "2026-06-15",
+  "meta": {
+    "nome": "Elevar o engajamento da comunidade WLC para 100 comentários por post",
+    "empresa": "WLC",
+    "status": "ativa",
+    "prazo": "2026-09-30",
+    "slug": "wlc-2026-q3-100-comentarios-por-post",
+    "url": "https://app.notion.com/p/37f4cfe1220181b7a7f3f49f27b867c3",
+    "porQueImporta": "Chegar a 100 comentários por post no Instagram da WLC é o sinal mais claro de que a comunidade está viva e respondendo. Atingir isso = estar de volta ao lugar onde a We Love Chile precisa estar: agência número um do Chile. O risco de não mover a meta é perder essa posição. O mercado não espera.",
+    "definicaoDePronto": "Posts publicados com 100 comentários cada, de forma consistente (100–200 por post como padrão, + 10 directs por story).",
+    "habitoUnico": "Gravar 3 bons conteúdos do Chile por dia: (1) sequência de stories, (2) vídeo YouTube, (3) Reel. Começa às 8h com o \"get ready with me\". Manhã é para câmera, não para teclado — não deixar estudo ou Claude invadirem a manhã.",
+    "regraCentral": "Nunca quebre a sequência duas vezes seguidas. Um dia perdido é acidente; dois dias seguidos é o começo de um novo padrão.",
+    "milestones": [
+      {"n": 1, "texto": "Fidelidade ao 8h por 30 dias corridos"},
+      {"n": 2, "texto": "30 dias do hábito completo sem falha"},
+      {"n": 3, "texto": "Rotina no automático + 50 comentários orgânicos por post (~60 dias)"},
+      {"n": 4, "texto": "100 comentários consistentes por post (meta final)"}
+    ],
+    "projetos": [
+      {"nome": "Flow Longo", "desc": "Produção de conteúdo long-form (YouTube)"},
+      {"nome": "Flow Curto", "desc": "Produção de Reels e carrosséis"},
+      {"nome": "Guias x Cadernos Secretos", "desc": "Material de conversão da comunidade"}
+    ],
+    "pilar": "https://app.notion.com/p/37f4cfe12201817d9c10e9a2c1bc70cc"
+  },
+  "calendarioGravacao": {
+    "fonte": "Notion · banco 'Produção | Flow Curto' (view WLC)",
+    "url": "https://app.notion.com/p/3804cfe1220181a6b2faddf7d94aa080",
+    "itens": [],
+    "nota": "Nenhum item WLC no banco ainda — views/conteúdo serão ajustados no Notion. O job de sexta sincroniza os temas marcados (Tema, Etapa, Semana alvo, Status Reel/Carrossel) e mostra aqui o que está pra gravar."
+  }
+}
